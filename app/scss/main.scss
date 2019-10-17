@@ -71,6 +71,12 @@ button {
   font-weight: 800;
   letter-spacing: 0.77px;
   border: none;
+  color: #ffffff;
+
+
+  &:hover {
+    opacity: 0.9;
+  }
 
   @media(max-width: 768px) {
     width: 500px;
@@ -93,7 +99,6 @@ button {
     width: 541px;
     height: 89px;
     border-radius: 45px;
-    color: #ffffff;
     background-color: #585da8;
     background-image: linear-gradient(to right, #5f64ae 0%, #5156c7 100%);
     font-size: 17px;
