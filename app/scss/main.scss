@@ -1,0 +1,135 @@
+@import "_fonts";
+@import "_mixins";
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  font-family: $base-font;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1320px;
+
+  @media (max-width: 1199px) {
+    width: 970px;
+  }
+
+  @media (max-width: 992px) {
+    width: 767px;
+  }
+
+  @media (max-width: 768px) {
+    width: 95%
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 559px;
+  height: 47px;
+  border-radius: 23px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.77px;
+  border: none;
+
+  @media(max-width: 768px) {
+    width: 500px;
+    font-weight: 700;
+    letter-spacing: auto;
+  }
+
+  @media(max-width: 576px) {
+    width: 300px;
+    height: 55px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &_light {
+    background-image: linear-gradient(to right, #0bdbdf 0%, #0bdbdf 85%, #0bdbdf 100%);
+  }
+
+  &_big {
+    width: 541px;
+    height: 89px;
+    border-radius: 45px;
+    color: #ffffff;
+    background-color: #585da8;
+    background-image: linear-gradient(to right, #5f64ae 0%, #5156c7 100%);
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media(max-width: 1200px) {
+      height: 70px;
+    }
+
+    @media(max-width: 576px) {
+      width: 300px;
+      height: 55px;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+@import "icons";
+
+//app/elements/banner
+@import "../elements/banner/banner";
+
+//app/elements/about-author
+@import "../elements/about-author/about-author";
+
+//app/elements/manual
+@import "../elements/manual/manual";
+
+//app/elements/footer
+@import "../elements/footer/footer";
+
+//app/elements/thanks-page
+@import "../elements/thanks-page/thanks-page";

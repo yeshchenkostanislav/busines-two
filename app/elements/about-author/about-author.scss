@@ -1,0 +1,243 @@
+.about-author {
+  padding: 20px 0;
+
+  &__wrap {
+    align-items: center;
+  }
+
+  &__title {
+    color: #091e42;
+    font-size: 46px;
+    position: relative;
+
+    @media(max-width: 1200px) {
+      font-size: 35px;
+    }
+
+    @media(max-width: 576px) {
+      font-size: 22px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      background: url(img/line.png)no-repeat center;
+      width: 70px;
+      height: 5px;
+      margin: 25px auto 0 auto;
+
+      @media(max-width: 992px) {
+        margin: 15px auto 0 auto;
+      }
+    }
+  }
+
+  &__name {
+    color: #091e42;
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: 9.2px;
+    margin: 23px 0 0 0;
+
+    @media(max-width: 1200px) {
+      font-size: 35px;
+    }
+
+    @media(max-width: 992px) {
+      font-size: 30px;
+      margin: 15px 0 0 0;
+    }
+
+    @media(max-width: 768px) {
+      font-size: 25px;
+    }
+
+    @media(max-width: 576px) {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    margin: 70px 0 0 0;
+    width: 100%;
+
+    @media(max-width: 1400px) {
+      padding: 0 15px;
+    }
+
+    @media(max-width: 1200px) {
+      flex-direction: column;
+      margin: 40px 0 0 0;
+    }
+
+    @media(max-width: 992px) {
+      padding: 0;
+    }
+
+    @media(max-width: 576px) {
+      align-items: center;
+      margin: 30px 0 0 0;
+    }
+  }
+
+  &__text {
+    margin: 0 160px 0 0;
+    padding: 0 0 60px 0;
+
+    @media(max-width: 1400px) {
+      margin: 0;
+    }
+
+    @media(max-width: 1200px) {
+      width: 100%;
+    }
+
+    @media(max-width: 576px) {
+      padding: 0 0 30px 0;
+    }
+  }
+
+  &__list {
+    max-width: 680px;
+    width: 100%;
+    padding: 0 0 0 40px;
+    position: relative;
+
+    @media(max-width: 1400px) {
+      max-width: 600px;
+      padding: 0 0 0 20px;
+    }
+
+    @media(max-width: 992px) {
+      padding: 0 0 0 40px;
+    }
+
+    @media(max-width: 576px) {
+      padding: 0 0 0 23px;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 412px;
+      left: 0;
+      top: 10px;
+      border: 1px solid #0bdbdf;
+      background-color: #0bdbdf;
+
+      @media(max-width: 1200px) {
+        height: 340px;
+      }
+
+      @media(max-width: 992px) {
+        left: 15px;
+        height: 350px;
+      }
+
+      @media(max-width: 768px) {
+        height: 370px;
+      }
+
+      @media(max-width: 576px) {
+        height: 87%;
+        left: 6px;
+      }
+
+      @media(max-width: 374px) {
+        height: 85%;
+      }
+    }
+  }
+
+  &__list-item {
+    color: #091e42;
+    font-size: 18px;
+    position: relative;
+
+    @media(max-width: 576px) {
+      font-size: 14px;
+    }
+
+    &:before {
+      content: '';
+      background: url(img/circle.png)no-repeat center/cover;
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      left: -50px;
+
+      @media(max-width: 1400px) {
+        left: -30px;
+      }
+
+      @media(max-width: 992px) {
+        left: -35px;
+      }
+
+      @media(max-width: 576px) {
+        left: -26px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+
+    &:not(:first-child) {
+      margin: 50px 0 0 0;
+
+      @media(max-width: 1200px) {
+        margin: 30px 0 0 0;
+      }
+
+      @media(max-width: 576px) {
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 40px 0 0 0;
+
+    @media(max-width: 1200px) {
+      margin: 40px auto 0 auto;
+    }
+  }
+
+  &__photo {
+    position: relative;
+    z-index: 2;
+    margin: 25px 0 0 0;
+
+    @media(max-width: 1200px) {
+      margin: 0 auto;
+    }
+
+    @media(max-width: 576px) {
+      width: 175px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      background: url(img/circle-bg.png)no-repeat center/cover;
+      position: absolute;
+      width: 614px;
+      height: 614px;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+
+      @media(max-width: 576px) {
+        width: 310px;
+        height: 310px;
+      }
+    }
+
+  }
+}

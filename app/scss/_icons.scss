@@ -1,0 +1,21 @@
+.icon {
+  display: inline-block;
+
+  &.logo {
+    background: url(img/icons/logo.png)no-repeat center/cover;
+    width: 192px;
+    height: 87px;
+  }
+
+  &.footer-logo {
+    background: url(img/icons/footer-logo.png)no-repeat center/cover;
+    width: 77px;
+    height: 83px;
+  }
+
+  &-logo {
+    width: 192px;
+    height: 87px;
+    fill: red;
+  }
+}
